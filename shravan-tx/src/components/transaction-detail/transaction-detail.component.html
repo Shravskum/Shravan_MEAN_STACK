@@ -1,0 +1,18 @@
+<section class="tx-detail-container">
+  <h3>Transaction Detail</h3>
+  <a mat-button (click)="navBack()">< Back</a>
+    <mat-list>
+      <mat-list-item>
+        <span matListItemTitle>ID</span>
+        <span matListItemLine>{{transaction.id}}</span>
+      </mat-list-item>
+      <mat-list-item>
+        <span matListItemTitle>Date</span>
+        <span matListItemLine>{{transaction.date | date}}</span>
+      </mat-list-item>
+      <mat-list-item>
+        <span matListItemTitle>Comments</span>
+        <span matListItemLine>{{transaction.Comments}}</span>
+      </mat-list-item>
+    </mat-list>
+</section>
